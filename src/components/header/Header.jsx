@@ -20,10 +20,10 @@ const Header = () => {
 
     const { i18n, t } = useTranslation();
 
-    // const changeLang = (e) => {
-    //     i18n.changeLanguage(e.target.textContent || "en");
-    //     setActiveLang(localStorage.getItem("lang"));
-    // };
+    const changeLang = (e) => {
+        i18n.changeLanguage(e.target.textContent || "en");
+        setActiveLang(localStorage.getItem("lang"));
+    };
 
     return (
         <header className="header">
