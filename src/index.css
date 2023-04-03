@@ -1,0 +1,140 @@
+@font-face {
+    font-family: "Quicksand";
+    src: url("./assets//fonts/Quicksand-Light.eot");
+    src: url("./assets//fonts/Quicksand-Light.eot?#iefix")
+            format("embedded-opentype"),
+        url("./assets//fonts/Quicksand-Light.woff2") format("woff2"),
+        url("./assets//fonts/Quicksand-Light.woff") format("woff"),
+        url("./assets//fonts/Quicksand-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Libre Baskerville";
+    src: url("./assets//fonts/LibreBaskerville-Regular.eot");
+    src: url("./assets//fonts/LibreBaskerville-Regular.eot?#iefix")
+            format("embedded-opentype"),
+        url("./assets//fonts/LibreBaskerville-Regular.woff2") format("woff2"),
+        url("./assets//fonts/LibreBaskerville-Regular.woff") format("woff"),
+        url("./assets//fonts/LibreBaskerville-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("./assets//fonts/Quicksand-Medium.eot");
+    src: url("./assets//fonts/Quicksand-Medium.eot?#iefix")
+            format("embedded-opentype"),
+        url("./assets//fonts/Quicksand-Medium.woff2") format("woff2"),
+        url("./assets//fonts/Quicksand-Medium.woff") format("woff"),
+        url("./assets//fonts/Quicksand-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("./assets//fonts/Quicksand-Regular.eot");
+    src: url("./assets//fonts/Quicksand-Regular.eot?#iefix")
+            format("embedded-opentype"),
+        url("./assets//fonts/Quicksand-Regular.woff2") format("woff2"),
+        url("./assets//fonts/Quicksand-Regular.woff") format("woff"),
+        url("./assets//fonts/Quicksand-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("./assets//fonts/Quicksand-SemiBold.eot");
+    src: url("./assets//fonts/Quicksand-SemiBold.eot?#iefix")
+            format("embedded-opentype"),
+        url("./assets//fonts/Quicksand-SemiBold.woff2") format("woff2"),
+        url("./assets//fonts/Quicksand-SemiBold.woff") format("woff"),
+        url("./assets//fonts/Quicksand-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+.container {
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+:root {
+    --white-c: #ffffff;
+    --black-c: #000000;
+    --green-c: #008000;
+}
+
+:root {
+    --text-xs: 12px;
+    --text-sm: 14px;
+    --text-base: 16px;
+    --text-lg: 18px;
+    --text-xl: 20px;
+    --text-2xl: 24px;
+    --text-3xl: 28px;
+    --text-title: 36px;
+}
+
+body,
+html {
+    font-weight: 400;
+    font-style: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
