@@ -1,0 +1,38 @@
+.hero {
+    padding: 150px 0 250px;
+    background-image: url("../../assets/images/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &-content {
+        max-width: 475px;
+    }
+
+    &__sub-title {
+        font-size: 17px;
+        line-height: 28px;
+        color: var(--black-c);
+        margin-bottom: 9px;
+    }
+
+    &-title {
+        font-family: var(--fz-secondary);
+        font-size: var(--text-title);
+        font-weight: 400;
+        line-height: 50px;
+        color: var(--black-c);
+        margin-bottom: 9px;
+    }
+
+    &__btn-shop {
+        max-width: 170px;
+        width: 100%;
+        padding: 11px;
+        background-color: var(--green-c);
+        border-radius: 20px;
+        color: var(--white-c);
+        font-size: var(--text-lg);
+        font-weight: 500;
+    }
+}

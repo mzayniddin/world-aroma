@@ -96,6 +96,10 @@
     --text-title: 36px;
 }
 
+:root {
+    --fz-secondary: "Libre Baskerville", sans-serif;
+}
+
 body,
 html {
     font-weight: 400;
@@ -137,4 +141,17 @@ textarea {
     color: inherit;
     margin: 0;
     padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--green-c);
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--white-c);
 }
