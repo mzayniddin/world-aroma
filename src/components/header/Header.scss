@@ -45,6 +45,7 @@
     }
 
     &-nav__list-link {
+        text-transform: capitalize;
         font-size: var(--text-lg);
         font-weight: 300;
         color: var(--black-c);

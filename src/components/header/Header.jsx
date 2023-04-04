@@ -46,7 +46,7 @@ const Header = () => {
                                     }
                                     to={"/"}
                                 >
-                                    Home
+                                    {t("home")}
                                 </NavLink>
                             </li>
                             <li className="header-nav__list-item">
@@ -54,7 +54,7 @@ const Header = () => {
                                     className="header-nav__list-link"
                                     to={"/about"}
                                 >
-                                    About Us
+                                    {t("about_us")}
                                 </NavLink>
                             </li>
 
@@ -63,7 +63,7 @@ const Header = () => {
                                     className="header-nav__list-link"
                                     to={"/services"}
                                 >
-                                    Services
+                                    {t("services")}
                                 </NavLink>
                             </li>
 
@@ -72,13 +72,7 @@ const Header = () => {
                                     className="header-nav__list-link"
                                     to={"/shop"}
                                 >
-                                    Shop
-                                </NavLink>
-                                <NavLink
-                                    className="header-nav__list-link"
-                                    to={"/shop"}
-                                >
-                                    Shop
+                                    {t("shop")}
                                 </NavLink>
                             </li>
                             <li className="header-nav__list-item">
@@ -86,7 +80,7 @@ const Header = () => {
                                     className="header-nav__list-link"
                                     to={"/shop"}
                                 >
-                                    Contact Us
+                                    {t("contact_us")}
                                 </NavLink>
                             </li>
                         </ul>
