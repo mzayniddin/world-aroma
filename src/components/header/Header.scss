@@ -60,6 +60,10 @@
         color: var(--green-c);
     }
 
+    &__right {
+        display: flex;
+    }
+
     // change lang button
     &__lang {
         position: relative;
@@ -108,5 +112,31 @@
         display: block;
         padding-top: 4px;
         font-size: var(--text-2xl);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        &-nav {
+            display: none;
+        }
+
+        &__right {
+            column-gap: 25px;
+        }
+
+        &__lang-btn {
+            width: 60px;
+            padding: 3px;
+
+            span {
+                font-size: var(--text-base);
+            }
+
+            svg {
+                font-size: 22px !important;
+                padding-top: 2px !important;
+            }
+        }
     }
 }

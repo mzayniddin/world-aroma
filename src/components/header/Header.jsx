@@ -13,8 +13,10 @@ import logo from "../../assets/images/logo.svg";
 // ICONS
 import { FiChevronDown } from "react-icons/fi";
 
+// COMPONENTS
+import HamburgerBtn from "./hamburger-btn/HamburgerBtn";
+
 const Header = () => {
-    const headerLinks = ["Home", "About Us", "Services", "Shop", "Contact Us"];
     const langs = ["en", "ru"];
     const [activeLang, setActiveLang] = useState(localStorage.getItem("lang"));
     const [isLangListMouseOver, setLangListMouseOver] = useState(false);
@@ -86,42 +88,45 @@ const Header = () => {
                         </ul>
                     </nav>
 
-                    <div
-                        className="header__lang"
-                        onMouseOver={() => {
-                            setLangListMouseOver(true);
-                        }}
-                        onMouseLeave={() => {
-                            setLangListMouseOver(false);
-                        }}
-                    >
-                        <button className="header__lang-btn">
-                            <span>{localStorage.getItem("lang")}</span>
-                            <FiChevronDown className="down-arrow" />
-                        </button>
-                        <div className="header__lang-collection">
-                            <ul
-                                onClick={() => {
-                                    setLangListMouseOver(false);
-                                }}
-                                style={
-                                    isLangListMouseOver
-                                        ? { display: "block" }
-                                        : { display: "none" }
-                                }
-                                className="header__lang-list"
-                            >
-                                {langs.map((lang) => (
-                                    <li
-                                        className="header__lang-list__item"
-                                        key={uuidv4()}
-                                        onClick={changeLang}
-                                    >
-                                        {lang}
-                                    </li>
-                                ))}
-                            </ul>
+                    <div className="header__right">
+                        <div
+                            className="header__lang"
+                            onMouseOver={() => {
+                                setLangListMouseOver(true);
+                            }}
+                            onMouseLeave={() => {
+                                setLangListMouseOver(false);
+                            }}
+                        >
+                            <button className="header__lang-btn">
+                                <span>{activeLang}</span>
+                                <FiChevronDown className="down-arrow" />
+                            </button>
+                            <div className="header__lang-collection">
+                                <ul
+                                    onClick={() => {
+                                        setLangListMouseOver(false);
+                                    }}
+                                    style={
+                                        isLangListMouseOver
+                                            ? { display: "block" }
+                                            : { display: "none" }
+                                    }
+                                    className="header__lang-list"
+                                >
+                                    {langs.map((lang) => (
+                                        <li
+                                            className="header__lang-list__item"
+                                            key={uuidv4()}
+                                            onClick={changeLang}
+                                        >
+                                            {lang}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
                         </div>
+                        <HamburgerBtn />
                     </div>
                 </div>
             </div>
