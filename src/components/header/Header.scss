@@ -1,7 +1,111 @@
 .header {
     padding: 10px 0;
 
+    &-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     &-logo a {
         display: inline-block;
+    }
+
+    &-nav {
+        flex: 1;
+        max-width: 730px;
+        width: 100%;
+        padding: 0 40px;
+    }
+
+    &-nav__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-nav__list-item {
+        position: relative;
+
+        &::after {
+            content: "";
+            height: 1px;
+            width: 0;
+            background-color: var(--green-c);
+            position: absolute;
+            bottom: -2px;
+            right: 0;
+            transition: 0.5s;
+        }
+
+        &:hover::after {
+            width: 100%;
+            left: 0;
+            transition: 0.5s;
+        }
+    }
+
+    &-nav__list-link {
+        font-size: var(--text-lg);
+        font-weight: 300;
+        color: var(--black-c);
+        position: relative;
+
+        &:hover {
+            color: var(--green-c);
+        }
+    }
+
+    &-nav__list-link.active {
+        color: var(--green-c);
+    }
+
+    // change lang button
+    &__lang {
+        position: relative;
+    }
+
+    &__lang-btn {
+        width: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px;
+        border: 1px solid var(--black-c);
+        border-radius: 50px;
+        color: var(--black-c);
+
+        span {
+            text-transform: capitalize;
+            font-size: var(--text-lg);
+            font-weight: 500;
+            letter-spacing: -0.03em;
+        }
+    }
+
+    &__lang-list {
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        border-radius: 5px;
+        background-color: var(--white-c);
+        box-shadow: 0 0 10px rgb(24 39 75 / 12%), 0 8px 16px -6px rgb(24 39 75 / 8%);
+        z-index: 1;
+    }
+
+    &__lang-list__item {
+        text-transform: capitalize;
+        padding: 8px 15px;
+        cursor: pointer;
+
+        &:hover {
+            color: var(--green-c);
+        }
+    }
+
+    .down-arrow {
+        display: block;
+        padding-top: 4px;
+        font-size: var(--text-2xl);
     }
 }

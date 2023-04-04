@@ -14,6 +14,7 @@ import logo from "../../assets/images/logo.svg";
 import { FiChevronDown } from "react-icons/fi";
 
 const Header = () => {
+    const headerLinks = ["Home", "About Us", "Services", "Shop", "Contact Us"];
     const langs = ["en", "ru"];
     const [activeLang, setActiveLang] = useState(localStorage.getItem("lang"));
     const [isLangListMouseOver, setLangListMouseOver] = useState(false);
@@ -28,80 +29,105 @@ const Header = () => {
     return (
         <header className="header">
             <div className="container">
-                <div className="header-logo">
-                    <Link to="/">
-                        <img src={logo} alt="Logo" />
-                    </Link>
-                </div>
-                <nav className="header-nav">
-                    <ul className="header-nav__list">
-                        <li className="header-nav__list-item">
-                            <NavLink className="header-nav__list-link" to="/">
-                                Home
-                            </NavLink>
-                        </li>
-                        <li className="header-nav__list-item">
-                            <NavLink className="header-nav__list-link" to="/">
-                                About Us
-                            </NavLink>
-                        </li>
-                        <li className="header-nav__list-item">
-                            <NavLink className="header-nav__list-link" to="/">
-                                Services
-                            </NavLink>
-                        </li>
-                        <li className="header-nav__list-item">
-                            <NavLink className="header-nav__list-link" to="/">
-                                Shop
-                            </NavLink>
-                        </li>
-                        <li className="header-nav__list-item">
-                            <NavLink className="header-nav__list-link" to="/">
-                                Contact Us
-                            </NavLink>
-                        </li>
-                    </ul>
-                </nav>
-
-                <div
-                    className="lang"
-                    onMouseOver={() => {
-                        setLangListMouseOver(true);
-                    }}
-                    onMouseLeave={() => {
-                        setLangListMouseOver(false);
-                    }}
-                >
-                    <button className="lang-btn">
-                        <span>{localStorage.getItem("lang")}</span>
-                        <FiChevronDown className="down-arrow" />
-                    </button>
-                    <div className="lang-collection">
-                        <ul
-                            onClick={() => {
-                                setLangListMouseOver(false);
-                            }}
-                            style={
-                                isLangListMouseOver
-                                    ? { display: "block" }
-                                    : { display: "none" }
-                            }
-                            className="lang-list nav__sub-list"
-                        >
-                            {langs.map((lang) => (
-                                <li
-                                    style={
-                                        activeLang === lang
-                                            ? { display: "none" }
-                                            : null
+                <div className="header-inner">
+                    <div className="header-logo">
+                        <Link to="/">
+                            <img src={logo} alt="Logo" />
+                        </Link>
+                    </div>
+                    <nav className="header-nav">
+                        <ul className="header-nav__list">
+                            <li className="header-nav__list-item">
+                                <NavLink
+                                    className={({ isActive }) =>
+                                        isActive
+                                            ? "header-nav__list-link active"
+                                            : "header-nav__list-link"
                                     }
-                                    key={uuidv4()}
-                                    onClick={changeLang}
+                                    to={"/"}
                                 >
-                                    {lang}
-                                </li>
-                            ))}
+                                    Home
+                                </NavLink>
+                            </li>
+                            <li className="header-nav__list-item">
+                                <NavLink
+                                    className="header-nav__list-link"
+                                    to={"/about"}
+                                >
+                                    About Us
+                                </NavLink>
+                            </li>
+
+                            <li className="header-nav__list-item">
+                                <NavLink
+                                    className="header-nav__list-link"
+                                    to={"/services"}
+                                >
+                                    Services
+                                </NavLink>
+                            </li>
+
+                            <li className="header-nav__list-item">
+                                <NavLink
+                                    className="header-nav__list-link"
+                                    to={"/shop"}
+                                >
+                                    Shop
+                                </NavLink>
+                                <NavLink
+                                    className="header-nav__list-link"
+                                    to={"/shop"}
+                                >
+                                    Shop
+                                </NavLink>
+                            </li>
+                            <li className="header-nav__list-item">
+                                <NavLink
+                                    className="header-nav__list-link"
+                                    to={"/shop"}
+                                >
+                                    Contact Us
+                                </NavLink>
+                            </li>
                         </ul>
+                    </nav>
+
+                    <div
+                        className="header__lang"
+                        onMouseOver={() => {
+                            setLangListMouseOver(true);
+                        }}
+                        onMouseLeave={() => {
+                            setLangListMouseOver(false);
+                        }}
+                    >
+                        <button className="header__lang-btn">
+                            <span>{localStorage.getItem("lang")}</span>
+                            <FiChevronDown className="down-arrow" />
+                        </button>
+                        <div className="header__lang-collection">
+                            <ul
+                                onClick={() => {
+                                    setLangListMouseOver(false);
+                                }}
+                                style={
+                                    isLangListMouseOver
+                                        ? { display: "block" }
+                                        : { display: "none" }
+                                }
+                                className="header__lang-list"
+                            >
+                                {langs.map((lang) => (
+                                    <li
+                                        className="header__lang-list__item"
+                                        key={uuidv4()}
+                                        onClick={changeLang}
+                                    >
+                                        {lang}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

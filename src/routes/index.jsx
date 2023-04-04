@@ -4,6 +4,7 @@ import App from "../App";
 
 // PAGES
 import Home from "../pages/Home";
+import About from "../pages/About";
 
 const root = createBrowserRouter([
     {
@@ -13,6 +14,10 @@ const root = createBrowserRouter([
             {
                 index: true,
                 element: <Home />,
+            },
+            {
+                path: "about",
+                element: <About />,
             },
         ],
     },
