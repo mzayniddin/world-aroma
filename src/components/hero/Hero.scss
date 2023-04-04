@@ -3,7 +3,7 @@
     background-image: url("../../assets/images/hero-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center right 20%;
 
     &-content {
         max-width: 475px;
@@ -25,14 +25,45 @@
         margin-bottom: 9px;
     }
 
-    &__btn-shop {
+    &__link-shop {
         max-width: 170px;
         width: 100%;
+        display: inline-block;
+        text-align: center;
         padding: 11px;
         background-color: var(--green-c);
         border-radius: 20px;
         color: var(--white-c);
         font-size: var(--text-lg);
         font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        padding: 54px 0 58px;
+
+        &-content {
+            max-width: 300px;
+        }
+
+        &__sub-title {
+            font-size: var(--text-base);
+            text-shadow: 0px 0px 10px rgb(166, 158, 158);
+        }
+
+        &-title {
+            font-size: 30px;
+            line-height: 125%;
+            margin-bottom: 18px;
+            text-shadow: 0px 0px 10px rgb(166, 158, 158);
+        }
+
+        &__link-shop {
+            max-width: 122px;
+            padding: 8px;
+            font-size: var(--text-base);
+            white-space: nowrap;
+        }
     }
 }

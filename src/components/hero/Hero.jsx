@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import "./Hero.scss";
 
 const Hero = () => {
@@ -13,7 +14,9 @@ const Hero = () => {
                     <h1 className="hero-title">
                         Making beautiful flowers a part of your life.
                     </h1>
-                    <button className="hero__btn-shop">{t("shop_now")}</button>
+                    <Link to="/shop" className="hero__link-shop">
+                        {t("shop_now")}
+                    </Link>
                 </div>
             </div>
         </section>
