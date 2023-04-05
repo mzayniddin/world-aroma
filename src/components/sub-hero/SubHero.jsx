@@ -1,5 +1,5 @@
 // COMPONENTS
-
+import FlowerLabel from "../flower-label/FlowerLabel";
 import Advantage from "./advantage/Advantage";
 
 // IMAGES
@@ -35,6 +35,7 @@ const SubHero = () => {
                     {subHeroImages.map((image) => (
                         <div className="sub-hero__img-wrap">
                             <img src={image} alt="Flowers" />
+                            <FlowerLabel />
                         </div>
                     ))}
                 </div>
