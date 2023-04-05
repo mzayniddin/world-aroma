@@ -1,12 +1,10 @@
-import { useState } from "react";
 import "./HamburgerBtn.scss";
 
-const HamburgerBtn = () => {
-    const [hamburgerState, setHamburgerState] = useState();
+const HamburgerBtn = ({ setNavActive, isNavActive }) => {
     return (
         <button
-            className={hamburgerState ? "hamburger active" : "hamburger"}
-            onClick={() => setHamburgerState((state) => !state)}
+            className={isNavActive ? "hamburger active" : "hamburger"}
+            onClick={() => setNavActive((state) => !state)}
         >
             <div className="hamburger-line"></div>
         </button>

@@ -15,12 +15,13 @@ import { FiChevronDown } from "react-icons/fi";
 
 // COMPONENTS
 import HamburgerBtn from "./hamburger-btn/HamburgerBtn";
+import MobileNav from "./mobile-nav/MobileNav";
 
 const Header = () => {
     const langs = ["en", "ru"];
     const [activeLang, setActiveLang] = useState(localStorage.getItem("lang"));
     const [isLangListMouseOver, setLangListMouseOver] = useState(false);
-
+    const [isNavActive, setNavActive] = useState(false);
     const { i18n, t } = useTranslation();
 
     const changeLang = (e) => {
@@ -126,8 +127,9 @@ const Header = () => {
                                 </ul>
                             </div>
                         </div>
-                        <HamburgerBtn />
+                        <HamburgerBtn setNavActive={setNavActive} isNavActive={isNavActive} />
                     </div>
+                    <MobileNav isNavActive={isNavActive} />
                 </div>
             </div>
         </header>

@@ -2,6 +2,8 @@
     display: none;
     align-items: center;
     padding: 10px 5px;
+    position: relative;
+    z-index: 15;
 
     &-line {
         width: 20px;
