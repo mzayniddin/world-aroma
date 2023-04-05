@@ -5,4 +5,22 @@
         display: flex;
         justify-content: space-between;
     }
+
+    &__images-wrapper {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 10px;
+        margin-top: 65px;
+    }
+
+    &__img-wrap {
+        width: 255px;
+        height: 245px;
+        overflow: hidden;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 }
