@@ -8,9 +8,10 @@
 
     &__imgs-list {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        justify-content: center;
-        gap: 30px 25px;
+        grid-template-columns: repeat(4, 255px);
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px 5px;
     }
 
     &__imgs-list-item {
@@ -63,6 +64,7 @@
     .ads-insta {
         &__imgs-list {
             grid-template-columns: repeat(2, 1fr);
+            column-gap: 20px;
         }
 
         &__imgs-list-item {
