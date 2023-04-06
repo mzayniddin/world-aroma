@@ -98,7 +98,23 @@
 }
 
 :root {
-    --fz-secondary: "Libre Baskerville", sans-serif;
+    --ff-secondary: "Libre Baskerville", sans-serif;
+}
+
+.title {
+    font-family: var(--ff-secondary);
+    font-size: var(--text-title);
+    font-weight: 400;
+    line-height: 50px;
+    color: var(--black-c);
+}
+
+.sub-title {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+    color: var(--green-c);
 }
 
 body,

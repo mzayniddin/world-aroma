@@ -47,12 +47,6 @@
 
 @media screen and (max-width: 768px) {
     .sub-hero {
-        &__advantages__wrapper {
-            display: none;
-        }
-
-        &__images-wrapper {
-            display: none
-        }
+        display: none;
     }
 }
