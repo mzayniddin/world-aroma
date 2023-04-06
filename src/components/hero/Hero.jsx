@@ -10,11 +10,17 @@ import "swiper/css/effect-fade";
 import "./Hero.scss";
 
 // IMAGES
-import image1 from "../../assets/images/hero-img1.jpg";
-import image2 from "../../assets/images/hero-img2.jpg";
+import image1 from "../../assets/hero_images/hero-img1.jpg";
+import image2 from "../../assets/hero_images/hero-img2.jpg";
+import image3 from "../../assets/hero_images/hero-img3.jpg";
+import image4 from "../../assets/hero_images/hero-img4.jpg";
+import image5 from "../../assets/hero_images/hero-img5.jpg";
+import image6 from "../../assets/hero_images/hero-img6.jpg";
+import image7 from "../../assets/hero_images/hero-img7.jpg";
 
 const Hero = () => {
     const { t } = useTranslation();
+    const imagesArr = [image1, image2, image3, image4, image5, image6, image7];
 
     return (
         <section className="hero">
@@ -30,12 +36,11 @@ const Hero = () => {
                 modules={[Autoplay, EffectFade]}
                 className="hero__swiper"
             >
-                <SwiperSlide>
-                    <img className="hero__swiper-img" src={image1} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img className="hero__swiper-img" src={image2} alt="" />
-                </SwiperSlide>
+                {imagesArr.map((img) => (
+                    <SwiperSlide>
+                        <img className="hero__swiper-img" src={img} alt="" />
+                    </SwiperSlide>
+                ))}
             </Swiper>
             <div className="container">
                 <div className="hero-content">

@@ -18,6 +18,7 @@ import aroma8 from "../assets/aromas_image/aroma8.png";
 
 // IMAGE ADS CONTACT
 import bgAds from "../assets/images/home-ads-bg.jpg";
+import AdsInsta from "../components/ads-insta/AdsInsta";
 
 export default function Home() {
     const aromaImages = [
@@ -39,6 +40,7 @@ export default function Home() {
             <AboutUs />
             <OurAromas aromaImages={aromaImages} />
             <AdsContact bg={bgAds} />
+            <AdsInsta />
         </div>
     );
 }
