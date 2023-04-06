@@ -7,7 +7,7 @@ import FlowerLabel from "../flower-label/FlowerLabel";
 const OurAromas = ({ aromaImages }) => {
     const { t } = useTranslation();
     return (
-        <div className="aromas">
+        <section className="aromas">
             <div className="container">
                 <div className="aromas-heading">
                     <span className="aromas-heading__sub-title sub-title">
@@ -27,7 +27,7 @@ const OurAromas = ({ aromaImages }) => {
                     ))}
                 </ul>
             </div>
-        </div>
+        </section>
     );
 };
 
