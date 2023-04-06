@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from "uuid";
 // COMPONENTS
 import FlowerLabel from "../flower-label/FlowerLabel";
 import Advantage from "./advantage/Advantage";
@@ -25,6 +26,7 @@ const SubHero = () => {
                 <div className="sub-hero__advantages__wrapper">
                     {aImages.map((image) => (
                         <Advantage
+                            key={uuidv4()}
                             img={image}
                             title="100% Freshness"
                             text="Most people are unaware of the less common flower"
@@ -33,7 +35,7 @@ const SubHero = () => {
                 </div>
                 <div className="sub-hero__images-wrapper">
                     {subHeroImages.map((image) => (
-                        <div className="sub-hero__img-wrap">
+                        <div key={uuidv4()} className="sub-hero__img-wrap">
                             <img src={image} alt="Flowers" />
                             <FlowerLabel />
                         </div>
