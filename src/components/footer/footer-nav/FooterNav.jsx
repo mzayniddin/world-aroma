@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import "./FooterNav.scss";
 
 const FooterNav = () => {
     const { t } = useTranslation();

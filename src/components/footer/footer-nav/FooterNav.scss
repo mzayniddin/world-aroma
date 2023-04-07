@@ -1,0 +1,8 @@
+.footer {
+    &__nav-link {
+        color: inherit;
+        &:hover {
+            color: var(--green-c);
+        }
+    }
+}
