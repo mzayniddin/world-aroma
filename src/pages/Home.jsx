@@ -5,6 +5,7 @@ import Hero from "../components/hero/Hero";
 import SubHero from "../components/sub-hero/SubHero";
 import OurAromas from "../components/our-aromas/OurAromas";
 import AdsContact from "../components/ads-contact/AdsContact";
+import Footer from "../components/footer/Footer";
 
 // AROMAS IMAGE
 import aroma1 from "../assets/aromas_image/aroma1.png";
@@ -41,6 +42,7 @@ export default function Home() {
             <OurAromas aromaImages={aromaImages} />
             <AdsContact bg={bgAds} />
             <AdsInsta />
+            <Footer />
         </div>
     );
 }
