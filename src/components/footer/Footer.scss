@@ -43,6 +43,21 @@
         line-height: 225%;
         color: var(--black-c);
     }
+
+    &__copyright {
+        text-align: center;
+        padding: 30px;
+        color: var(--black-c);
+        border-top: 1px solid rgba(191, 216, 191, 0.49);
+        a {
+            color: inherit;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+        a:hover {
+            color: var(--green-c);
+        }
+    }
 }
 
 @media screen and (max-width: 1080px) {

@@ -26,6 +26,10 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
+            <p className="footer__copyright">
+                © 2018-2023 World Aroma. All rights reserved. Created by{" "}
+                <a href="https://t.me/m_zayniddin">M.Z</a>
+            </p>
         </footer>
     );
 };
