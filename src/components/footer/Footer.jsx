@@ -27,7 +27,8 @@ const Footer = () => {
                 </div>
             </div>
             <p className="footer__copyright">
-                © 2018-2023 World Aroma. All rights reserved. Created by{" "}
+                © 2018-2023 World Aroma. All rights reserved. Designed by{" "}
+                <a href="https://t.me/Lilccmitis">F</a> . Created by{" "}
                 <a href="https://t.me/m_zayniddin">M.Z</a>
             </p>
         </footer>
