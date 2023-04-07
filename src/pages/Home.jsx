@@ -1,11 +1,9 @@
 // COMPONENTS
 import AboutUs from "../components/about-us/AboutUs";
-import Header from "../components/header/Header";
 import Hero from "../components/hero/Hero";
 import SubHero from "../components/sub-hero/SubHero";
 import OurAromas from "../components/our-aromas/OurAromas";
 import AdsContact from "../components/ads-contact/AdsContact";
-import Footer from "../components/footer/Footer";
 
 // AROMAS IMAGE
 import aroma1 from "../assets/aromas_image/aroma1.png";
@@ -34,15 +32,13 @@ export default function Home() {
     ];
 
     return (
-        <div>
-            <Header />
+        <main>
             <Hero />
             <SubHero />
             <AboutUs />
             <OurAromas aromaImages={aromaImages} />
             <AdsContact bg={bgAds} />
             <AdsInsta />
-            <Footer />
-        </div>
+        </main>
     );
 }
