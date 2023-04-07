@@ -1,0 +1,24 @@
+.footer .footer__right__socials {
+    &-list {
+        display: flex;
+        gap: 10px;
+    }
+
+    &-link {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: var(--black-c);
+        color: var(--white-c);
+        font-size: var(--text-xl);
+        transition: 0s;
+
+        &:hover {
+            color: rgb(144, 224, 24);
+            transition: color 0s;
+        }
+    }
+}

@@ -7,7 +7,7 @@ import FooterContact from "./footer-contact/FooterContact";
 
 // COMPONENTS
 import FooterNav from "./footer-nav/FooterNav";
-import FooterRight from "./footer-right/FooterRight";
+import FooterRight from "./footer-right/FooterSocials";
 
 const Footer = () => {
     return (
