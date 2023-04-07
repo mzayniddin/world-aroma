@@ -1,0 +1,27 @@
+.service-type {
+    text-align: center;
+    padding: 30px 20px;
+    border: 1px solid var(--green-c);
+    position: relative;
+
+    &::after {
+        padding: 10px 36px;
+        position: absolute;
+        background-color: var(--white-c);
+        background-repeat: no-repeat;
+        background-position: center;
+        top: -40%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .service-type {
+        &__title {
+            font-size: 30px !important;
+        }
+    }
+}
