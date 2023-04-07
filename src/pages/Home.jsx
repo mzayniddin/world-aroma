@@ -4,6 +4,7 @@ import Hero from "../components/hero/Hero";
 import SubHero from "../components/sub-hero/SubHero";
 import OurAromas from "../components/our-aromas/OurAromas";
 import AdsContact from "../components/ads-contact/AdsContact";
+import AdsInsta from "../components/ads-insta/AdsInsta";
 
 // AROMAS IMAGE
 import aroma1 from "../assets/aromas_image/aroma1.png";
@@ -17,7 +18,6 @@ import aroma8 from "../assets/aromas_image/aroma8.png";
 
 // IMAGE ADS CONTACT
 import bgAds from "../assets/images/home-ads-bg.jpg";
-import AdsInsta from "../components/ads-insta/AdsInsta";
 
 export default function Home() {
     const aromaImages = [
