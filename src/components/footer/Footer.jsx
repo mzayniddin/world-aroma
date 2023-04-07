@@ -1,25 +1,29 @@
-
 // IMAGE & ICONS
 import logo from "../../assets/images/logo.svg";
 
 // SCSS
 import "./Footer.scss";
+import FooterContact from "./footer-contact/FooterContact";
 
 // COMPONENTS
 import FooterNav from "./footer-nav/FooterNav";
+import FooterRight from "./footer-right/FooterRight";
 
 const Footer = () => {
     return (
         <footer className="footer">
             <div className="container">
-                <div className="footer__logo">
-                    <img src={logo} alt="World Aroma logo" />
-                </div>
-                <div className="footer__middle">
-                    <FooterNav />
-                </div>
-                <div className="footer__right">
-                    
+                <div className="footer-inner">
+                    <div className="footer__logo">
+                        <img src={logo} alt="World Aroma logo" />
+                    </div>
+                    <div className="footer__middle">
+                        <FooterNav />
+                        <FooterContact />
+                    </div>
+                    <div className="footer__right">
+                        <FooterRight />
+                    </div>
                 </div>
             </div>
         </footer>
