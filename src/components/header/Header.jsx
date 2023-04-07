@@ -129,7 +129,7 @@ const Header = () => {
                         </div>
                         <HamburgerBtn setNavActive={setNavActive} isNavActive={isNavActive} />
                     </div>
-                    <MobileNav isNavActive={isNavActive} />
+                    <MobileNav isNavActive={isNavActive} setNavActive={setNavActive} />
                 </div>
             </div>
         </header>
