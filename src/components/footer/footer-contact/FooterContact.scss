@@ -3,20 +3,18 @@
     display: flex;
     align-items: center;
     color: inherit;
-    transition: 0.5s;
 
     &:hover {
         color: var(--green-c);
         fill: green;
-        transition: 0.5s;
 
         svg {
-            color: inherit;
             fill: var(--green-c);
         }
     }
 
     svg {
         margin-right: 8px;
+        color: var(--green-c);
     }
 }

@@ -1,13 +1,14 @@
 .footer {
+    border-top: 1px solid rgba(191, 216, 191, 0.49);
+
     &-inner {
         display: flex;
-        border-top: 1px solid rgba(191, 216, 191, 0.49);
-        border-bottom: 1px solid rgba(191, 216, 191, 0.49);
     }
 
     &__logo,
     &__middle,
     &__right {
+        flex: 1;
         padding: 46px 0 36px;
     }
 
@@ -41,5 +42,90 @@
         font-size: 14px;
         line-height: 225%;
         color: var(--black-c);
+    }
+}
+
+@media screen and (max-width: 1080px) {
+
+    .footer {
+
+        &__logo,
+        &__middle,
+        &__right {
+            padding: 36px 0 26px;
+        }
+
+        &__middle {
+            margin: 0 35px 0 25px;
+            padding: 36px 30px 26px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            border: 1px solid rgba(191, 216, 191, 0.49);
+            height: 100%;
+            left: 46%;
+            transform: translateX(-50%);
+        }
+
+        &-inner {
+            display: grid;
+            justify-content: space-around;
+            align-items: center;
+            grid-template-areas: "logo right"
+                "middle middle"
+            ;
+        }
+
+        &__logo img {
+            max-width: 90px;
+            width: 100%;
+            height: 62px;
+        }
+
+        &__middle {
+            order: 3;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            gap: 0;
+            grid-area: middle;
+            justify-content: space-between;
+        }
+
+        &__logo {
+            grid-area: logo;
+        }
+
+        &__right {
+            grid-area: right;
+        }
+
+        &__logo,
+        &__right {
+            padding: 15px 0 40px;
+        }
+
+        &__list-title {
+            margin-bottom: 10px;
+        }
+
+        &__contact-wrapper {
+            padding-left: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .footer::after {
+        left: 42%;
     }
 }

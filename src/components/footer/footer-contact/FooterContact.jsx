@@ -3,7 +3,7 @@ import { FiPhone } from "react-icons/fi";
 
 const FooterContact = () => {
     return (
-        <div>
+        <div className="footer__contact-wrapper">
             <strong className="footer__list-title">Contact</strong>
             <ul className="footer__contact footer__list">
                 <li className="footer__list-item">
