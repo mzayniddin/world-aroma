@@ -5,6 +5,7 @@ import App from "../App";
 // PAGES
 import Home from "../pages/Home";
 import About from "../pages/About";
+import Services from "../pages/Services";
 
 const root = createBrowserRouter([
     {
@@ -18,6 +19,10 @@ const root = createBrowserRouter([
             {
                 path: "about",
                 element: <About />,
+            },
+            {
+                path: "services",
+                element: <Services />,
             },
         ],
     },

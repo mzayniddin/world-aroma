@@ -6,7 +6,7 @@ const FooterNav = () => {
     const { t } = useTranslation();
     return (
         <nav className="footer__nav">
-            <strong className="footer__list-title">Navigation</strong>
+            <strong className="footer__list-title">{t("navigation")}</strong>
             <ul className="footer__nav-list footer__list">
                 <li className="footer__list-item">
                     <Link to="/" className="footer__nav-link footer__link">
@@ -23,7 +23,7 @@ const FooterNav = () => {
                         to="/service"
                         className="footer__nav-link footer__link"
                     >
-                        {t("service")}
+                        {t("services")}
                     </Link>
                 </li>
                 <li className="footer__list-item">

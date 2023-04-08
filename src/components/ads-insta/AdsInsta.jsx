@@ -31,7 +31,7 @@ const AdsInsta = () => {
                             <div className="insta-label">
                                 <FaInstagram />
                                 <p>
-                                    {t("follow_us")}{" "}
+                                    {t("follow")}{" "}
                                     <a href="https://instagram.com">@florist</a>
                                 </p>
                             </div>

@@ -29,6 +29,7 @@
     }
 
     &__list-title {
+        text-transform: capitalize;
         display: inline-block;
         font-weight: 700;
         font-size: var(--text-base);
@@ -138,7 +139,7 @@
         }
 
         &__contact-wrapper {
-            padding-left: 25px;
+            padding-left: 20px;
         }
 
         &__copyright {
