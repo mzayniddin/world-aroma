@@ -1,0 +1,79 @@
+.contact {
+    padding-bottom: 50px;
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left {
+        flex: 1;
+    }
+
+    .title {
+        text-transform: capitalize;
+        color: var(--green-c);
+        margin-bottom: 10px;
+    }
+
+    &__form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    &__input {
+        label {
+            font-weight: 600;
+            font-size: var(--text-sm);
+            line-height: 20px;
+            letter-spacing: 0.005em;
+            color: var(--black-c);
+        }
+
+        input,
+        textarea {
+            max-width: 350px;
+            width: 100%;
+            display: block;
+            margin-top: 4px;
+            padding: 16px 24px;
+            background: var(--white-c);
+            border: 1px solid #C2C2C2;
+            border-radius: 12px;
+            outline: none;
+            letter-spacing: 0.005em;
+            line-height: 24px;
+
+            &:focus {
+                border-color: var(--black-c);
+            }
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .PhoneInput {
+            max-width: 350px;
+            width: 100%;
+            column-gap: 10px;
+        }
+    }
+
+    &__form-submit {
+        max-width: 170px;
+        width: 100%;
+        background: var(--green-c);
+        border-radius: 20px;
+        padding: 11px;
+        font-weight: 500;
+        font-size: var(--text-lg);
+        line-height: 22px;
+        color: var(--white-c);
+
+        &:hover {
+            background-color: #067306;
+            ;
+        }
+    }
+}
