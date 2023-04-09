@@ -81,7 +81,7 @@ const Header = () => {
                             <li className="header-nav__list-item">
                                 <NavLink
                                     className="header-nav__list-link"
-                                    to={"/shop"}
+                                    to={"/contact"}
                                 >
                                     {t("contact_us")}
                                 </NavLink>

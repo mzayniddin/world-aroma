@@ -13,5 +13,10 @@
     "navigation": "Навигация",
     "aromas": "ароматы",
     "fresh": "Свежие",
-    "from": "От"
+    "from": "От",
+    "fullname": "Полное имя",
+    "telephone": "Телефон",
+    "email_address": "Адрес электронной почты",
+    "message": "Сообщение",
+    "submit": "Отправить"
 }

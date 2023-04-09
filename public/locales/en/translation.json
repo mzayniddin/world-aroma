@@ -13,5 +13,10 @@
     "navigation": "Navigation",
     "aromas": "aromas",
     "fresh": "Fresh",
-    "from": "From"
+    "from": "From",
+    "fullname": "Full name",
+    "telephone": "Telephone",
+    "email_address": "Email address",
+    "message": "Message",
+    "submit": "Submit"
 }
