@@ -38,7 +38,8 @@ const root = createBrowserRouter([
                 element: <Contact />,
             },
         ],
-
+    },
+    {
         path: "*",
         element: <NotFound />,
     },
