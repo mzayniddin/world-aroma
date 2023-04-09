@@ -4,6 +4,7 @@
     &-inner {
         display: flex;
         justify-content: space-between;
+        gap: 40px 20px;
     }
 
     &__left {
@@ -75,6 +76,67 @@
         &:hover {
             background-color: #067306;
             ;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contact .contact-inner {
+        flex-direction: column;
+    }
+
+    .contact .map {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        padding: 30px 0;
+
+        .title {
+            font-size: 30px;
+        }
+
+        .map {
+            height: 380px;
+        }
+
+        &__form {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__input {
+            label {
+                font-size: var(--text-xs);
+                line-height: 17px;
+            }
+
+            input,
+            textarea {
+                padding: 14px 16px;
+                font-size: var(--text-sm);
+                line-height: 17px;
+            }
+
+            textarea {
+                height: 200px;
+            }
+
+            input, textarea, .PhoneInput {
+                max-width: 400px;
+            }
+
+            &:nth-child(3){
+                order: 1;
+            }
+        }
+
+        &__form-submit {
+            max-width: 125px;
+            padding: 8px;
+            font-size: var(--text-base);
+            order: 2;
         }
     }
 }

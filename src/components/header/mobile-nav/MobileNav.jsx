@@ -57,7 +57,7 @@ const MobileNav = ({ isNavActive, setNavActive }) => {
                         <li className="mobile-nav__list-item">
                             <NavLink
                                 className="mobile-nav__list-link"
-                                to={"/shop"}
+                                to={"/contact"}
                             >
                                 {t("contact_us")}
                             </NavLink>
