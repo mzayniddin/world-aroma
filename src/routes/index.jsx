@@ -9,6 +9,9 @@ import Services from "../pages/Services";
 import Shop from "../pages/Shop";
 import Contact from "../pages/Contact";
 
+// COMPONENT
+import NotFound from "../components/not-found/NotFound";
+
 const root = createBrowserRouter([
     {
         path: "/",
@@ -35,6 +38,9 @@ const root = createBrowserRouter([
                 element: <Contact />,
             },
         ],
+
+        path: "*",
+        element: <NotFound />,
     },
 ]);
 

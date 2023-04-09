@@ -1,0 +1,15 @@
+.not-found {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 20px;
+
+    &__title {
+        font-size: 120px;
+    }
+
+    &__msg {
+        font-size: 30px
+    }
+}
