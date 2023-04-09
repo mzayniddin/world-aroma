@@ -25,18 +25,15 @@
     }
 }
 
-@media screen and (max-width: 526px) {
+@media screen and (max-width: 768px) {
     .aromas {
-        padding: 35px 0;
-        text-align: start;
+        .title {
+            font-size: 30px;
+        }
 
         &-heading {
             margin-bottom: 50px;
             flex-direction: column-reverse;
-        }
-
-        &-heading-title {
-            line-height: 100%;
         }
 
         &-heading__sub-title {
@@ -45,8 +42,15 @@
         }
 
         &__list {
-            gap: 22px 0;
+            gap: 22px 15px;
         }
+    }
+}
+
+@media screen and (max-width: 526px) {
+    .aromas {
+        padding: 35px 0;
+        text-align: start;
 
         &__list-item {
             width: 100%;
