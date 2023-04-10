@@ -11,6 +11,7 @@ import Contact from "../pages/Contact";
 
 // COMPONENT
 import NotFound from "../components/not-found/NotFound";
+import Admin from "../pages/Admin";
 
 const root = createBrowserRouter([
     {
@@ -36,6 +37,10 @@ const root = createBrowserRouter([
             {
                 path: "contact",
                 element: <Contact />,
+            },
+            {
+                path: "admin",
+                element: <Admin />,
             },
         ],
     },
