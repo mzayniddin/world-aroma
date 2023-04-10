@@ -1,9 +1,11 @@
-
+import AdminTable from "../components/admin-table/AdminTable";
 
 const Admin = () => {
-  return (
-    <div>Admin</div>
-  )
-}
+    return (
+        <main>
+            <AdminTable />
+        </main>
+    );
+};
 
-export default Admin
+export default Admin;
