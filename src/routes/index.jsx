@@ -16,6 +16,7 @@ import Admin from "../pages/Admin";
 const root = createBrowserRouter([
     {
         path: "/",
+        errorElement: <NotFound />,
         element: <App />,
         children: [
             {

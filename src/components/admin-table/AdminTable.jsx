@@ -1,4 +1,5 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 import "./AdminTable.scss";
 import axios from "axios";
 
@@ -6,9 +7,17 @@ import axios from "axios";
 const BASE_URL = "https://alltravel.uz/api/apps";
 
 const AdminTable = () => {
-    useEffect(async () => {
-        await axios.get("");
+    const [clientsList, setClientsList] = useState([]);
+
+    useEffect(() => {
+        (async () => {
+            const RESPONSE = await axios.get(`${BASE_URL}/client/list`);
+            if (RESPONSE.status === 200) setClientsList(RESPONSE.data);
+            else alert("Something went wrong!");
+        })();
     }, []);
+
+    console.log(clientsList);
 
     return (
         <table className="admin-table">
@@ -21,7 +30,23 @@ const AdminTable = () => {
                     <th>Comment</th>
                 </tr>
             </thead>
-            <tbody></tbody>
+            <tbody>
+                {clientsList?.length ? (
+                    clientsList.map(
+                        ({ id, fullname, phone, email, comment }) => (
+                            <tr key={uuidv4()}>
+                                <td>{id}</td>
+                                <td>{fullname}</td>
+                                <td>{phone}</td>
+                                <td>{email}</td>
+                                <td>{comment}</td>
+                            </tr>
+                        )
+                    )
+                ) : (
+                    <></>
+                )}
+            </tbody>
         </table>
     );
 };
