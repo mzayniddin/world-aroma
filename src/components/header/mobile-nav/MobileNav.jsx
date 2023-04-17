@@ -28,6 +28,7 @@ const MobileNav = ({ isNavActive, setNavActive }) => {
                                 {t("home")}
                             </NavLink>
                         </li>
+                        
                         <li className="mobile-nav__list-item">
                             <NavLink
                                 className="mobile-nav__list-link"
