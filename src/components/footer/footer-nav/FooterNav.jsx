@@ -20,7 +20,7 @@ const FooterNav = () => {
                 </li>
                 <li className="footer__list-item">
                     <Link
-                        to="/service"
+                        to="/services"
                         className="footer__nav-link footer__link"
                     >
                         {t("services")}
