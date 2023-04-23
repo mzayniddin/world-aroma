@@ -29,6 +29,8 @@ const Header = () => {
         setActiveLang(localStorage.getItem("lang"));
     };
 
+    document.body.style.overflow = isNavActive ? "hidden" : "auto";
+
     return (
         <header className="header">
             <div className="container">
@@ -52,6 +54,7 @@ const Header = () => {
                                     {t("home")}
                                 </NavLink>
                             </li>
+
                             <li className="header-nav__list-item">
                                 <NavLink
                                     className="header-nav__list-link"
@@ -127,9 +130,15 @@ const Header = () => {
                                 </ul>
                             </div>
                         </div>
-                        <HamburgerBtn setNavActive={setNavActive} isNavActive={isNavActive} />
+                        <HamburgerBtn
+                            setNavActive={setNavActive}
+                            isNavActive={isNavActive}
+                        />
                     </div>
-                    <MobileNav isNavActive={isNavActive} setNavActive={setNavActive} />
+                    <MobileNav
+                        isNavActive={isNavActive}
+                        setNavActive={setNavActive}
+                    />
                 </div>
             </div>
         </header>
