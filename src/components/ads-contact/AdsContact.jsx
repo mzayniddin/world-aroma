@@ -13,9 +13,9 @@ const AdsContact = ({ bg }) => {
         >
             <div className="container">
                 <div className="ads-contact__content">
-                    <p className="ads-contact__subtitle">Custom Aromas</p>
+                    <p className="ads-contact__subtitle">{t("custome")}</p>
                     <h3 className="ads-contact__title title">
-                        Let our aromas make your product more perfect.
+                        {t("let our aromas make your product more perfect")}
                     </h3>
                     <Link className="ads-contact__link" to="/contact">{t("contact_us")}</Link>
                 </div>

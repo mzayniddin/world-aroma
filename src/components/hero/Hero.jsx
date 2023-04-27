@@ -45,10 +45,10 @@ const Hero = () => {
             <div className="container">
                 <div className="hero-content">
                     <span className="hero__sub-title">
-                        Fresh Flowers Aroma Shop
+                        {t("fresh-aromas")}
                     </span>
                     <h1 className="hero-title">
-                        Making fragrance a part of your life.
+                        {t("making")}
                     </h1>
                     <Link to="/shop" className="hero__link-shop">
                         {t("shop_now")}
