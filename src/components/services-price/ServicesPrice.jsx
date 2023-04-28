@@ -28,18 +28,10 @@ const ServicesPrice = () => {
 
                     <div className="services__content-text__wrapper">
                         <p className="services__content-text">
-                            For Heather Henson, of Boreal Blooms in Cold Lake,
-                            Alberta, Canada, growing flowers that can be dried
-                            and incorporated into late fall and winter floral
-                            arrangements has been a game-changer. During her
-                            growing season, this farmer-florist relies on a
-                            vivid palette of annuals, perennials and ornamental
-                            grasses to supply her studio.
+                            {t("for")}
                         </p>
                         <p className="services__content-text">
-                            Free initial consulting. For retail and office
-                            tenants who are interested in a weekly delivery
-                            program floral design plan.
+                            {t("free")}
                         </p>
                     </div>
                 </div>

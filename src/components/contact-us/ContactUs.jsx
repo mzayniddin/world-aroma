@@ -8,7 +8,7 @@ import "./ContactUs.scss";
 import "react-phone-number-input/style.css";
 
 // BASE URL
-const BASE_URL = "https://alltravel.uz/api/apps";
+const BASE_URL = "https://world-aroma.com/apps";
 
 const ContactUs = () => {
     const { t } = useTranslation();
