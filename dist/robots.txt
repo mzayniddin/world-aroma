@@ -1,0 +1,43 @@
+# https://www.robotstxt.org/robotstxt.html
+
+User-agent: *
+Allow: /
+Allow: /about
+Allow: /services
+Allow: /shop
+Allow: /contact
+
+User-agent: Googlebot
+Allow: /
+Allow: /about
+Allow: /services
+Allow: /shop
+Allow: /contact
+
+User-agent: Bingbot
+Allow: /
+Allow: /about
+Allow: /services
+Allow: /shop
+Allow: /contact
+
+User-agent: Adsbot-Google
+Allow: /
+Allow: /about
+Allow: /services
+Allow: /shop
+Allow: /contact
+
+User-agent: Googlebot-Image
+Allow: /
+Allow: /about
+Allow: /services
+Allow: /shop
+Allow: /contact
+
+User-agent: Googlebot-Mobile
+Allow: /
+Allow: /about
+Allow: /services
+Allow: /shop
+Allow: /contact
