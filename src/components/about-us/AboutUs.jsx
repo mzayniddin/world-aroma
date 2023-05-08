@@ -19,18 +19,12 @@ const AboutUs = () => {
                             {t("about_us")}
                         </span>
                         <h2 className="title about-heading__title">
-                            We provide all kinds of fresh flower services
+                            {t("we provide all kinds of fresh aromas and fragrance")}
                         </h2>
                     </div>
                     <div className="about-top__text">
                         <p>
-                            For Heather Henson, of Boreal Blooms in Cold Lake,
-                            Alberta, Canada, growing flowers that can be dried
-                            and incorporated into late fall and winter floral
-                            arrangements has been a game-changer. During her
-                            growing season, this farmer-florist relies on a
-                            vivid palette of annuals, perennials and ornamental
-                            grasses to supply her studio.
+                            {t("for")}
                         </p>
                     </div>
                 </div>
@@ -45,16 +39,13 @@ const AboutUs = () => {
                     </div>
                     <div className="about-body__content">
                         <span className="about-body__content-sub-title sub-title">
-                            SLOW FLOWERS’ FLORAL INSIGHTS
+                            {t("slow")}
                         </span>
                         <h2 className="about-body__content-title title">
-                            Dried flowers are having a renaissance
+                            {t("dried")}
                         </h2>
                         <p className="about-body__content-text">
-                            This awareness has been stimulated by sustainable
-                            sourcing practices and the desire on the part of
-                            North American flower growers to “extend the season”
-                            beyond the last frost.
+                            {t("this")}
                         </p>
                         <Link
                             to="/contact"
