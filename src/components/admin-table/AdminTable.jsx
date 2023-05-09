@@ -4,7 +4,7 @@ import "./AdminTable.scss";
 import axios from "axios";
 
 // BASE URL
-const BASE_URL = "https://alltravel.uz/api/apps";
+const BASE_URL = "https://world-aroma.com/api/v1/apps";
 
 const AdminTable = () => {
     const [clientsList, setClientsList] = useState([]);
